@@ -1,0 +1,23 @@
+@keyframes bg-animation{
+	from {background-position: 0 0;}
+	to {background-position: 852px 0;} /* 852px corresponds to the image size and was set to avoid animation stutter */
+}
+
+/*html{
+	margin: 0;
+}*/
+
+body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+
+	background-image: url(stars.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-size: cover;
+
+	animation: bg-animation 40s linear infinite;
+
+	color: white;	
+}	
