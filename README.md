@@ -1,4 +1,4 @@
-Star Wars Catalogue (SWC) - search for all the Star Wars characters
+Star Wars Catalogue (SWC) - search for all the Star Wars characters. <br>
 Express + JS app that uses the public Star Wars API https://swapi.co/ to provide informations about the characters.
 
 How to run
