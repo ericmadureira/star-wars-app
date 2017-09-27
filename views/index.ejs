@@ -1,9 +1,23 @@
 <% include partials/header %>
-<div class="container">
+
 	<div class="jumbotron">
 		<h1>Star Wars Catalogue</h1>
-		<p>The Force is strong in this app, you may ask about any Star Wars character</p>
-	</div>	
-</div>
+		<br>
+		<p><strong>The Force is strong in this app!</strong></p>
+	</div>
+
+	<div class="row">
+		<p class="form-label">You may search for any Star Wars character</p>
+		<div class="form">
+			<form action="/results" method="GET">
+				<div class="form-group">
+					<input class="form-control" type="text" name="search" placeholder="ex: Obi Wan Kenobi">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-lg btn-submit btn-block"><b>Submit</b></button>
+				</div>
+			</form>
+		</div>
+	</div>
 
 <% include partials/footer %>
