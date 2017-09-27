@@ -95,6 +95,10 @@ body{
 	color: white;
 }
 
+.result-label{
+	color: #FFFC30;
+}
+
 .result-row{
 	display: flex;
 	flex-wrap: wrap;

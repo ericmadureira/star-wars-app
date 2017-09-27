@@ -1,7 +1,7 @@
 <% include partials/header %>
 
-<p>You have searched for: "<%= query %>"</p>
-<p>We have found <%= data["count"] %> <%= data["count"] <= 1 ? 'character' : 'characters' %>: </p>
+<p class="result-label">You have searched for: "<%= query %>"</p>
+<p class="result-label">We have found <%= data["count"] %> <%= data["count"] <= 1 ? 'character' : 'characters' %>: </p>
 <ul class="result-profiles">
 	<% data["results"].forEach(function(char){ %>
 		<li>
