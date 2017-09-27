@@ -2,9 +2,11 @@
 
 	<div class="col-xs-12">
 		<div class="thumbnail">
-			<label><%= data["results"]["name"] %></label>
-			<label><%= data["results"]["gender"] %></label>
-			<label><%= data["results"]["birth_year"] %></label>
+			Name: <label><%= data["results"][0]["name"] %></label><br>
+			Gender: <label><%= data["results"][0]["gender"] %></label><br>
+      Birth Year: <label><%= data["results"][0]["birth_year"] %></label><br>
+      Height: <label><%= data["results"][0]["height"] %></label><br>
+			Mass: <label><%= data["results"][0]["mass"] %></label><br>
 			<!-- <li><%# char["homeworld"] %></li> -->
 		</div>
 	</div>
