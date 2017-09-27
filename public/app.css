@@ -1,23 +1,94 @@
-@keyframes bg-animation{
-	from {background-position: 0 0;}
-	to {background-position: 852px 0;} /* 852px corresponds to the image size and was set to avoid animation stutter */
+@font-face{
+  font-family: "Star Wars";
+  src: url(/Starjedi.ttf);
 }
 
-/*html{
-	margin: 0;
-}*/
+@keyframes bg-animation{
+	from {background-position: 0 0;}
+	to {background-position: 8000px 0;}
+} 
 
-body{
+html{
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	padding: 0;
+}
 
-	background-image: url(stars.jpg);
+body{
+	width: 100%;	
+	margin: 0;
+	padding: 0;
+	font-family: Lato;
+
+	background-image: url(stars.jpg);	
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
 	background-size: cover;
 
-	animation: bg-animation 40s linear infinite;
+	animation: bg-animation 500s linear infinite;
+	-ms-animation: bg-animation 500s linear infinite;
+  -moz-animation: bg-animation 500s linear infinite;
+  -webkit-animation: bg-animation 500s linear infinite;
+}
 
-	color: white;	
-}	
+.btn-submit{
+  background-color: #FFFC30;
+	border-color: #FFF000;
+	color: black;
+}
+
+.btn-submit:hover, .btn-submit:focus, .btn-submit:active,
+.btn-submit.active, .open>.dropdown-toggle.btn-submit, .btn-submit:active:focus{
+  color: #FFFC30;
+  background-color: #000;
+  border-color: #000;
+}
+
+.content{
+	background-color: #222222;
+	border: 1px solid black;
+}
+
+.form{
+	width: 30%;
+	margin: 0 auto;
+}
+
+.form-label{
+	text-align: center;
+	color: white;
+}
+
+.jumbotron{
+	color: #FFFC30;
+	background-color: black;
+	margin-top: 80px;
+}
+
+.jumbotron h1{
+	font-family: "Star Wars";
+	margin-left: 30px;
+}
+
+.jumbotron p{
+	margin-left: 30px;
+}
+
+.navbar-inverse .navbar-brand{
+	font-family: "Star Wars";
+	color: #FFFC30;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+	color: white;
+}
+
+.result-item{
+	
+}
+
+.result-row{
+	display: flex;
+	flex-wrap: wrap;
+}
