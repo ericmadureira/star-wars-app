@@ -6,17 +6,14 @@
 	<p><strong>The Force is strong in this app!</strong></p>
 </div>
 
-<div class="row result-row">
+<% results_count = data["count"] %>
+<p>You have searched for: "<%= query %>"</p>
+<p>We have found <%= results_count %> <%= results_count <= 1 ? 'character' : 'characters' %>: </p>
+<ul class="result-profiles">
 	<% data["results"].forEach(function(char){ %>
-		<div class="col-md-4 col-sm-6 col-xs-12">
-			<div class="thumbnail">
-				<li class="result-item"><%= char["name"] %></li>		
-				<li class="result-item"><%= char["gender"] %></li>
-				<li class="result-item"><%= char["birth_year"] %></li>
-				<!-- <li><%# char["homeworld"] %></li> -->
-			</div>
-		</div>		
+		<li><a href="/profile/"><%= char["name"] %></a></li>
 	<% }) %>
-</div>
+</ul>
+
 
 <% include partials/footer %>
