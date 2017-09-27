@@ -6,7 +6,7 @@ How to run
 2. cd into the folder
 3. Run 'npm install'
 4. Run 'node app.js'
-5. Server on 'localhost:3001' or any other port of your preference
+5. Server on 'localhost:3001' or any other port of your preference. You can change it on the 'app.js' file.
 
 Features
 1. character search

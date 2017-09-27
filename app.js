@@ -33,13 +33,26 @@ app.get("/results", function(req, res){
 	});
 });
 
+// CHARACTER PROFILE
+app.get("/profile/:char", function(req, res){
+  var name = req.params.char;
+  var url = "https://swapi.co/api/people/?search="+name;
+  request(url, function(error, response, body){
+    if(!error && response.statusCode == 200){
+      var data = JSON.parse(body);
+      res.render("profile", {data: data});
+    }
+  });
+});
+
 // CATCHES ROUTE EXCEPTIONS
 app.get("*", function(req, res){
 	res.render("page_not_found");
 });
 
 // SERVER
-app.listen("3001", function(){
+var port = 3001
+app.listen(port, function(){
   console.log("App on port 3001...");
 });
 /////////////////////////////////////////////////////////////

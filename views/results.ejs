@@ -1,19 +1,15 @@
 <% include partials/header %>
 
-<div class="jumbotron">
-	<h1>Star Wars Catalogue</h1>
-	<br>
-	<p><strong>The Force is strong in this app!</strong></p>
-</div>
-
-<% results_count = data["count"] %>
 <p>You have searched for: "<%= query %>"</p>
-<p>We have found <%= results_count %> <%= results_count <= 1 ? 'character' : 'characters' %>: </p>
+<p>We have found <%= data["count"] %> <%= data["count"] <= 1 ? 'character' : 'characters' %>: </p>
 <ul class="result-profiles">
 	<% data["results"].forEach(function(char){ %>
-		<li><a href="/profile/"><%= char["name"] %></a></li>
-	<% }) %>
+		<li>
+      <a href=<%= `/profile/${char["name"]}` %>>
+        <%= char["name"] %>
+      </a>
+    </li>
+	<% }); %>
 </ul>
-
 
 <% include partials/footer %>

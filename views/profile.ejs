@@ -1,10 +1,12 @@
 <% include partials/header %>
-	<div class="col-md-4 col-sm-6 col-xs-12">
+
+	<div class="col-xs-12">
 		<div class="thumbnail">
-			<li class="result-item"><%= char["name"] %></li>
-			<li class="result-item"><%= char["gender"] %></li>
-			<li class="result-item"><%= char["birth_year"] %></li>
+			<label><%= data["results"]["name"] %></label>
+			<label><%= data["results"]["gender"] %></label>
+			<label><%= data["results"]["birth_year"] %></label>
 			<!-- <li><%# char["homeworld"] %></li> -->
 		</div>
 	</div>
+
 <% include partials/footer %>

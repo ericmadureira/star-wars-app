@@ -66,6 +66,7 @@ body{
 	color: #FFFC30;
 	background-color: black;
 	margin-top: 80px;
+	word-wrap: break-word;
 }
 
 .jumbotron h1{
@@ -86,7 +87,7 @@ body{
 	color: white;
 }
 
-.result-item{
+.result-item, .result-item label{
 	color: black;
 }
 
