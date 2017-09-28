@@ -37,12 +37,18 @@ app.get("/results", function(req, res){
 app.get("/profile/:char", function(req, res){
   var name = req.params.char;
   var url = "https://swapi.co/api/people/?search="+name;
-  request(url, function(error, response, body){
+  var people_all = "https://swapi.co/api/people/";
+  request(people_all, function(error, response, body){
     if(!error && response.statusCode == 200){
       var data = JSON.parse(body);
       res.render("profile", {data: data});
     }
   });
+});
+
+// ABOUT THE AUTHOR
+app.get("/about", function(req, res){
+	res.render("about");
 });
 
 // CATCHES ROUTE EXCEPTIONS

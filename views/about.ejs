@@ -9,7 +9,7 @@
 
 		<link rel="stylesheet" type="text/css" href="/app.css">
 	</head>
-	<body>
+	<body class="scrolling-text">
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container">
@@ -31,11 +31,18 @@
 		    </div>
 		  </div>
 	  </nav>
-		
-		<!-- START OF CONTENT -->
-	  <div class="content container">
-	  	<div class="jumbotron">
-				<h1>Star Wars Catalogue</h1>
-				<br>
-				<p><strong>The Force is strong in this app!</strong></p>
-			</div>
+
+		<div class="fade"></div>
+		<section class="star-wars">
+		  <div class="crawl">
+		    <div class="title">
+		      <p>Episode IV</p>
+		      <h1>A New Hope</h1>
+		    </div>
+		    <p>Baiano, Web Developer and System Analysis/Development student. I’ve been working with Ruby on Rails daily on sisvida.com.br and I’m also studying the modern Javascript enviroment, which includes Node and React.</p>
+		    <p>I’m part of the Training Center, an open source brazilian community focused in mentorship and learning for developers. I recommend it for everybody.</p>
+		    <p>You may find me playing videogames and having a good time with my family and my girlfriend when I’m not programming...</p>
+		  </div>
+		</section>
+
+<% include partials/footer %>
