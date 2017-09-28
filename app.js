@@ -37,8 +37,7 @@ app.get("/results", function(req, res){
 app.get("/profile/:char", function(req, res){
   var name = req.params.char;
   var url = "https://swapi.co/api/people/?search="+name;
-  var people_all = "https://swapi.co/api/people/";
-  request(people_all, function(error, response, body){
+  request(url, function(error, response, body){
     if(!error && response.statusCode == 200){
       var data = JSON.parse(body);
       res.render("profile", {data: data});

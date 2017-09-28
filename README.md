@@ -10,6 +10,6 @@ How to run
 
 Features
 1. character search
-2. profile page and related characters from the same planet
+2. profile page
 
 May the force be with you!
